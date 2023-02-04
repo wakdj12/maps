@@ -1,21 +1,65 @@
 /*Basics */
 * {
   box-sizing: border-box;
+  color: aliceblue;
+  border-radius: 30px;
+}
+
+body {
+  background-color: black;
+}
+#wrapper {
+  background-color: black;
+  margin: auto;
 }
 
 h1 {
   text-align: center;
 }
 
+.card-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /*Info cards*/
 .cards {
-  display: flex;
   width: 95%;
   height: 15em;
-  border: solid black 0.05em;
-  /* margin: 0 0 0.5em 0.5em; */
-  margin: auto;
+  border: solid aliceblue 0.05em;
   margin-bottom: 2em;
 }
+
+/*Info dimensions*/
+
+/*Tablets*/
+
+@media screen and (min-width: 31em) and (max-width: 59em) {
+  .cards {
+    flex: 1 0 40%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    /* height: 15em; */
+  }
+}
+
+/*Tablets END*/
+
+/*Laptops*/
+
+@media screen and (min-width: 60em) {
+  .cards {
+    flex: 1 0 30%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+/*laptops END*/
+
+/*Info dimensions END*/
 
 /*Info cards END*/
