@@ -52,58 +52,52 @@ nav {
   /* margin: 2em 0 2em 0; */
 }
 
-/*Anchor styling*/
-
-a:link {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
-}
-
-a:visited {
-  text-decoration: #c1e1c1;
+  color: #c1e1c1;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  font-style: italic;
+  color: #fffff0;
 }
 
-a:active {
-  text-decoration: none;
-}
-
-/*Anchor styling END*/
-
-/*Info cards*/
 .card-container {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 
 .cards {
   width: 95%;
   height: 20em;
-  border: solid aliceblue 0.05em;
+  border: solid #c1e1c1 0.05em;
   margin-bottom: 2em;
+  box-shadow: 0.1em 0.1em 1em rgba(193, 225, 193, 0.3);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-/*Info dimensions*/
-
-/*Tablets*/
+.cards:hover {
+  transform: scale(1.02);
+  box-shadow: 0.1em, 0.1em 1em rgba(193, 225, 193, 0.5);
+  cursor: pointer;
+}
 
 @media screen and (min-width: 31em) and (max-width: 59em) {
   .cards {
     flex: 1 0 40%;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    /* height: 15em; */
   }
 }
-
-/*Tablets END*/
-
-/*Laptops*/
 
 @media screen and (min-width: 60em) {
   .cards {
@@ -113,7 +107,3 @@ a:active {
     height: 25em;
   }
 }
-
-/*laptops END*/
-
-/*Info cards END*/
