@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
+
     <title>Around The Flags</title>
   </head>
   <body class="homepage">
@@ -52,57 +54,82 @@
         have included do not reflect my views.
       </p>
 
-      <div id="a">
-        <div class="card-container">
-          <div class="cards">
-            <h2>Afghanistan</h2>
-            <h3>جمهوری اسلامی افغانستان</h3>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_the_Islamic_Emirate_of_Afghanistan.svg"
-              alt="Flag of Afghanistan"
-            />
-            <p>
-              Afghanistan is a country located in South Asia and Central Asia.
-              It has a rich cultural heritage and has been home to several
-              ancient civilizations. The country has been involved in conflict
-              for many years, including the Soviet war in the 1980s and the
-              ongoing war with Taliban militants. Despite ongoing political and
-              security challenges, Afghanistan has made progress in recent
-              years, including the development of its infrastructure, economy,
-              and education system. Despite these challenges, the Afghan people
-              are known for their resilience and hospitality, and the country
-              remains an important part of the global community.
-            </p>
-          </div>
-          <div class="cards">
-            <h3>Albania</h3>
-          </div>
-          <div class="cards">
-            <h3>Algeria</h3>
-          </div>
-          <div class="cards">
-            <h3>Andorra</h3>
-          </div>
-          <div class="cards">
-            <h3>Angola</h3>
-          </div>
-          <div class="cards">
-            <h3>Argentina</h3>
-          </div>
-          <div class="cards">
-            <h3>Armenia</h3>
-          </div>
-          <div class="cards">
-            <h3>Australia</h3>
-          </div>
-          <div class="cards">
-            <h3>Austria</h3>
-          </div>
-          <div class="cards">
-            <h3>Azerbaijan</h3>
+      <div class="card-container" id="a">
+        <div class="cards" id="afg">
+          <h2>Afghanistan</h2>
+          <h3>د افغانستان اسلامي امارت</h3>
+          <img
+            class="trigger"
+            id="afghanistan-trigger"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_the_Islamic_Emirate_of_Afghanistan.svg"
+            alt="Flag of Afghanistan"
+          />
+          <p>
+            Afghanistan is a country located in South Asia and Central Asia. It
+            has a rich cultural heritage and has been home to several ancient
+            civilizations. The country has been involved in conflict for many
+            years, including the Soviet war in the 1980s and the ongoing war
+            with Taliban militants.
+          </p>
+          <div id="afghanistan-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">×</span>
+              <p>Some text in the Modal..1</p>
+            </div>
           </div>
         </div>
+
+        <div class="cards">
+          <h2>Albania</h2>
+          <h3>Republika e Shqipërisë</h3>
+          <img
+            id="albania-trigger"
+            class="trigger"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"
+            alt="Flag of Albania"
+          />
+          <p>
+            Afghanistan is a country located in South Asia and Central Asia. It
+            has a rich cultural heritage and has been home to several ancient
+            civilizations. The country has been involved in conflict for many
+            years, including the Soviet war in the 1980s and the ongoing war
+            with Taliban militants.
+          </p>
+          <div id="albania-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">×</span>
+              <p>Some text in the Modal..2</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h3>Algeria</h3>
+        </div>
+        <div class="cards">
+          <h3>Andorra</h3>
+        </div>
+        <div class="cards">
+          <h3>Angola</h3>
+        </div>
+        <div class="cards">
+          <h3>Argentina</h3>
+        </div>
+        <div class="cards">
+          <h3>Armenia</h3>
+        </div>
+        <div class="cards">
+          <h3>Australia</h3>
+        </div>
+        <div class="cards">
+          <h3>Austria</h3>
+        </div>
+        <div class="cards">
+          <h3>Azerbaijan</h3>
+        </div>
       </div>
+
       <footer>
         <p>Jonny Armstrong Walsh 2023</p>
       </footer>
